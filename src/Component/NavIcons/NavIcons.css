@@ -1,0 +1,19 @@
+ul{
+    background-color: white;
+    height:60px;
+    padding:0 10px;
+    position: fixed;
+    width: 50%;
+    margin: 10px auto;
+    
+    align-items: center;
+    justify-items: right;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .banner__slider {
+        padding:0 100px;
+    }
+}
