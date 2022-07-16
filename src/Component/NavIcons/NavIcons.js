@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./NavIcons.css";
 import {IoIosArrowBack} from "react-icons/io";
 import {GiIsland, GiCoffeeCup} from "react-icons/gi";
@@ -8,13 +8,22 @@ import {RiParkingFill} from "react-icons/ri"
 import { IconContext } from "react-icons"
 
 
-const NavIcons = () => (
+function NavIcons () {
+    const [state, setState] = useState(1);
+
+    const page = () => {
+        setState();
+    }
+
+      
+
+    return(
     <IconContext.Provider value={{size:"1.2em", color:"blue"}}>
     <div className='NavIcons'>
         {/* <div>
             <IoIosArrowBack/>
         </div> */}
-        <div className='icon-block' onClick={()=>{alert('clicked')}}>
+        <div className='icon-block' onClick={() => page(1)}>
             <GiIsland/>
             <p>Islands</p>
         </div>
@@ -41,6 +50,7 @@ const NavIcons = () => (
 
     </div>
     </IconContext.Provider>
-)
+    )
+}
 
 export default NavIcons
