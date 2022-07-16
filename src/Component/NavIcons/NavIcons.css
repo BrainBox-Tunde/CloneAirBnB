@@ -1,16 +1,20 @@
-ul{
-    background-color: white;
-    height:60px;
-    padding:0 10px;
-    position: fixed;
-    width: 50%;
-    margin: 10px auto;
-    
+.NavIcons{
+    background-color: red;
+    justify-content: space-between; 
     align-items: center;
-    justify-items: right;
+    position: sticky;
+    width: 90%;
+    margin:auto 80px; 
+    display: inline-flex;
+    position: fixed;
+    height: 50px;
 }
 
-
+.icon-block{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (min-width: 1024px) {
     .banner__slider {

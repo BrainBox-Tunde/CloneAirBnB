@@ -9,6 +9,7 @@ import NavIcons from "../NavIcons/NavIcons";
 
 function Header() {
   return (
+    <div className="header-box">
     <div className="header">
       <Link to="/">
         <img
@@ -28,7 +29,9 @@ function Header() {
         <ExpandMoreIcon />
         <Avatar />
       </div>
-      <NavIcons />
+
+    </div>
+    <NavIcons />
     </div>
   );
 }
