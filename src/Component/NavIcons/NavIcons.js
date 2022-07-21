@@ -6,6 +6,7 @@ import {FaUmbrellaBeach, FaHome} from "react-icons/fa";
 import {MdPool} from "react-icons/md";
 import {RiParkingFill} from "react-icons/ri"
 import { IconContext } from "react-icons"
+import BeachPage from '../NavIconPage/BeachPage';
 
 
 function NavIcons () {
@@ -13,6 +14,13 @@ function NavIcons () {
 
     const page = () => {
         setState();
+    } 
+    const handleBeach = () =>{
+        return (
+            <div>
+            <h1>Hello</h1>
+            </div>
+        )
     }
 
       
@@ -31,7 +39,7 @@ function NavIcons () {
             <FaUmbrellaBeach/>
             <p>Beach</p>
         </div> 
-        <div className='icon-block'>
+        <div className='icon-block' onClick={handleBeach}>
             <MdPool/>
             <p>Amazing Pools</p>
         </div>
