@@ -8,6 +8,7 @@ import {RiParkingFill} from "react-icons/ri"
 import { IconContext } from "react-icons"
 import { FaFilter } from 'react-icons/fa';
 import BeachPage from '../NavIconPage/BeachPage';
+import {link} from "react-router-dom";
 
 
 function NavIcons () {
@@ -32,10 +33,10 @@ function NavIcons () {
         {/* <div>
             <IoIosArrowBack/>
         </div> */}
-        <div className='icon-block' onClick={() => page(1)}>
+        {/* <link to="" className='icon-block' >
             <GiIsland/>
             <p>Islands</p>
-        </div>
+        </link> */}
         <div className='icon-block'>
             <FaUmbrellaBeach/>
             <p>Beach</p>
