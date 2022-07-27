@@ -5,7 +5,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Footer from "./Component/Footer/Footer";
 import Home from "./Component/Home";
 import SearchPage from "./Component/SearchPage/SearchPage";
-import BeachPage from './Component/NavIconPage/BeachPage'
+import BeachPage from './Component/NavIconPage/BeachPage';
+import NavIcons from "./Component/NavIcons/NavIcons";
+// import {Routes} from "react-router-dom";
 
 
 function App() {
@@ -13,18 +15,18 @@ function App() {
     <div className="app">
       <Router>
         <Header />
-        
+        <NavIcons />
 
         <Switch>
-          <Route path="/search">
-            <SearchPage />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-          <Route path="./Component/NavIconPage/BeachPage">
-            <BeachPage />
-          </Route>
+          {/* <Routes> */}
+            <Route path="/search">
+              <SearchPage />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+            <Route path="/NavIconPage/BeachPage" element = {<BeachPage />} />
+          {/* </Routes> */}
         </Switch>
         <Footer />
       </Router>

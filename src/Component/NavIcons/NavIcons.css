@@ -6,9 +6,11 @@
     width: 90%;
     margin:auto 80px; 
     display: inline-flex;
-    position: fixed;
+    
     height: 50px;
     padding: 10px;
+    z-index: 1;
+    box-sizing: border-box;
 }
 
 .icon-block{
@@ -21,4 +23,13 @@
     .banner__slider {
         padding:0 100px;
     }
+}
+
+.icon-block:active{
+    border-bottom: solid 2px green;
+}
+
+.icon-block:hover{
+    border-bottom: solid 2px red;
+    cursor: pointer;
 }

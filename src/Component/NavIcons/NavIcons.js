@@ -6,6 +6,7 @@ import {FaUmbrellaBeach, FaHome} from "react-icons/fa";
 import {MdPool} from "react-icons/md";
 import {RiParkingFill} from "react-icons/ri"
 import { IconContext } from "react-icons"
+import { FaFilter } from 'react-icons/fa';
 import BeachPage from '../NavIconPage/BeachPage';
 
 
@@ -55,6 +56,10 @@ function NavIcons () {
             <FaHome/>
             <p>Shared Homes</p>
         </div>
+        {/* <div>
+            <FaFilter/>
+            <p>Filter</p>
+        </div> */}
 
     </div>
     </IconContext.Provider>

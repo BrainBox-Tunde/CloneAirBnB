@@ -5,11 +5,11 @@ import LanguageIcon from "@material-ui/icons/Language";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Avatar } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import NavIcons from "../NavIcons/NavIcons";
+
 
 function Header() {
   return (
-    <div className="header-box">
+    
     <div className="header">
       <Link to="/">
         <img
@@ -31,8 +31,7 @@ function Header() {
       </div>
 
     </div>
-    <NavIcons />
-    </div>
+   
   );
 }
 
